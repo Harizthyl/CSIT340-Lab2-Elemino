@@ -1,8 +1,8 @@
 function ContactLink({ label, href, text }) {
   return (
     <li>
-      <span className="font-semibold mr-2">{label}</span>
-      <a href={href} className="text-blue-700 underline hover:text-blue-900">{text}</a>
+      <span className="inline-block w-24 text-sm text-stone-500">{label}</span>
+      <a href={href} className="font-medium hover:underline">{text}</a>
     </li>
   )
 }

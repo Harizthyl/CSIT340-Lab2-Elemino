@@ -1,8 +1,10 @@
-export default function Fact({ label, value }) {
+function Fact({ label, value }) {
   return (
     <div>
-      <dt className="font-normal">{label}</dt>
-      <dd className="ml-6 font-normal">{value}</dd>
+      <dt className="text-sm text-stone-500">{label}</dt>
+      <dd className="mt-1 font-medium">{value}</dd>
     </div>
-  );
+  )
 }
+
+export default Fact

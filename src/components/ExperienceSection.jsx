@@ -1,33 +1,32 @@
-import SectionHeading from "./SectionHeading";
-import TimelineItem from "./TimelineItem";
+import SectionHeading from './SectionHeading'
+import TimelineItem from './TimelineItem'
 
 function ExperienceSection() {
   return (
-    <section id="experience" className="mb-8">
+    <section id="experience" className="max-w-4xl mx-auto px-6 py-16 border-t border-stone-200 scroll-mt-16">
       <SectionHeading title="Experience" subtitle="Where I have learned and worked." />
-      <br/>
-      <ol className="list-decimal pl-5">
+      <ol className="mt-8 space-y-8 border-l border-stone-200">
         <TimelineItem
-          period="2024 - Present"
+          period="2024 – Present"
           title="BS Information Technology Student"
           place="Cebu Institute of Technology - University"
-          description="Studying in Bachelor of Science in Information Technology"
+          description="Studying Bachelor of Science in Information Technology."
         />
         <TimelineItem
-          period="2025 - Present"
+          period="2025 – Present"
           title="Non-Academic Scholar"
           place="Computer Engineering Laboratory"
           description="Assisted faculty members in the office and handles inventory management of the laboratory."
         />
         <TimelineItem
-          period="2022 - 2022"
+          period="2022"
           title="Intern / On-job Training"
           place="Greentech Land Development Corp."
-          description="Assigned in the documentation department and did multiple task given by the supervisor."
+          description="Assigned in the documentation department and did multiple tasks given by the supervisor."
         />
       </ol>
     </section>
-  );
+  )
 }
 
-export default ExperienceSection;
+export default ExperienceSection

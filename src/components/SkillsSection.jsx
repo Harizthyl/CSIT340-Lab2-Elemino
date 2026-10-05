@@ -1,32 +1,37 @@
-import SectionHeading from './SectionHeading'
-import SkillTag from './SkillTag'
+import SectionHeading from "./SectionHeading";
+import SkillTag from "./SkillTag";
 
 function SkillsSection() {
   return (
-    <section id="skills" className='mb-8'>
+    <section
+      id="skills"
+      className="max-w-4xl mx-auto px-6 py-16 border-t border-stone-200 scroll-mt-16"
+    >
       <SectionHeading title="Skills" subtitle="What I work with." />
-      <div>
-        <div className='mb-4'>
-          <br/>
-          <h3 className='font-bold mb-4'>Languages</h3>
-          <div className="flex gap-2">
+      <div className="mt-8 grid gap-8 sm:grid-cols-3">
+        <div>
+          <h3 className="text-sm font-medium text-stone-500">Languages</h3>
+          <div className="mt-3 flex flex-wrap gap-2">
             <SkillTag name="C" />
             <SkillTag name="C++" />
             <SkillTag name="JavaScript" />
             <SkillTag name="Java" />
+            <SkillTag name="Kotlin" />
+            <SkillTag name="GdScript" />
           </div>
         </div>
-        <div className='mb-4'>
-          <h3 className='font-bold mb-4'>Frameworks</h3>
-          <div className="flex gap-2">
+        <div>
+          <h3 className="text-sm font-medium text-stone-500">Frameworks</h3>
+          <div className="mt-3 flex flex-wrap gap-2">
             <SkillTag name="React" />
             <SkillTag name="Tailwind CSS" />
             <SkillTag name="Bootstrap" />
+            <SkillTag name="SpringBoot" />
           </div>
         </div>
-        <div className='mb-4'> 
-          <h3 className='font-bold mb-4'>Tools</h3>
-          <div className="flex gap-2">
+        <div>
+          <h3 className="text-sm font-medium text-stone-500">Tools</h3>
+          <div className="mt-3 flex flex-wrap gap-2">
             <SkillTag name="Git" />
             <SkillTag name="VS Code" />
             <SkillTag name="MySQL" />
@@ -35,7 +40,7 @@ function SkillsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default SkillsSection
+export default SkillsSection;
